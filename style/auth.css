@@ -1,0 +1,74 @@
+.hero {
+    margin: 0;
+    padding: 0 100px;
+    min-height: 10px; 
+    background-image: none;
+}
+.hero-lk{
+    padding: 0 100px;
+    background-color: #6176F7;
+    margin: 0;
+    height: 100px;
+}
+.auth-section {
+    align-items: center;
+    margin-inline: auto;
+    width: 600px;
+    display: flex;
+}
+.navigation-user-item button{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 24px;
+    background-color: inherit;
+}
+.auth-container {
+    margin-top: 80px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f7f7f8;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1;
+    margin-bottom: 80px;
+    min-height: 200px;
+}
+
+.auth-container.hidden {
+    display: none;
+}
+
+input {
+    padding: 20px;
+    border: 1px solid #CCC;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+button {
+    padding: 20px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.auth-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+#login-message, #register-message {
+    color: red;
+    font-size: 14px;
+}

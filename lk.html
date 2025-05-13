@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход и Регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/auth.css">
+
+    <script defer src="js/auth.js"></script>
+</head>
+
+<body>
+    <header>
+    </header>
+    <section class="hero-lk">
+        <nav class="navigation">
+            <a href="index.html" class="logo-link"><span class="span-a">A</span>&<span class="span-e">E</span></a>
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a href="#" class="navigation-item-link active">Главная</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#about" class="navigation-item-link">Тренажеры</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#about" class="navigation-item-link">Лекции</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#about" class="navigation-item-link">О нас</a>
+                </li>
+            </ul>
+            <ul class="navigation-user">
+                <li class="navigation-user-item">
+                    <button class="navigation-user-link" id="switch-to-register">Войти</button>
+                </li>
+                <li class="navigation-user-item">
+                    <button class="navigation-user-link sign-up-button" id="switch-to-register">Нет аккаунта</button>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+        <section class="auth-section">
+            <div class="auth-container" id="login-form">
+                <h2>Вход</h2>
+                <div class="auth-wrapper">
+                    <input type="text" id="login-email" placeholder="Email">
+                    <input type="password" id="login-password" placeholder="Пароль">
+                </div>
+                <button class="sign-up-button" id="login-btn">Войти</button>
+                
+            </div>
+            <div class="auth-container hidden" id="register-form">
+                <h2>Регистрация</h2>
+                <div class="auth-wrapper">
+                <input type="text" id="register-email" placeholder="Имя">
+                <input type="text" id="register-email" placeholder="Email">
+                <input type="password" id="register-password" placeholder="Пароль">
+                <input type="password" id="register-password" placeholder="Повторите пароль">
+            </div>
+            <button class="sign-up-button" id="register-btn">Зарегистрироваться</button>
+          
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="one-cell-container">
+            <a href="index.html" class="logo-link"><span class="span-a">A</span>&<span class="span-e">E</span></a>
+            <p class="phone-text">Номер: <a href="tel:+78128121212" class="footer-tel">+7 (812) 812-12-12</a></p>
+        </div>
+        <ul class="footer-nav">
+            По сайту:
+            <li class="nav-item">
+                <a href="#" class="nav-item-link">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-item-link">Тренажеры</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-item-link">Лекции</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="nav-item-link">О нас</a>
+            </li>
+        </ul>
+        <ul class="social-list">
+            <li class="social-item">
+                <a href="#" class="social-link"></a>
+            </li>
+            <li class="social-item">
+                <a href="#" class="social-link"></a>
+            </li>
+            <li class="social-item">
+                <a href="#" class="social-link"></a>
+            </li>
+            <li class="social-item">
+                <a href="#" class="social-link"></a>
+            </li>
+        </ul>
+        <p class="copy">&copy; Amen&Els 2025</p>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loginForm = document.getElementById('login-form');
+            const registerForm = document.getElementById('register-form');
+            const switchToRegister = document.getElementById('switch-to-register');
+            const loginBtn = document.getElementById('login-btn');
+            const loginMessage = document.getElementById('login-message');
+
+            function toggleForms() {
+                loginForm.classList.toggle('hidden');
+                registerForm.classList.toggle('hidden');
+            }
+
+            switchToRegister.addEventListener('click', (e) => {
+                e.preventDefault();
+                toggleForms();
+            });
+
+            loginBtn.addEventListener('click', () => {
+                const email = document.getElementById('login-email').value;
+                const password = document.getElementById('login-password').value;
+
+                if (email === 'Amen@mail.ru' && password === '123') {
+                    window.location.href = 'profile.html';
+                } else {
+    
+                    loginMessage.style.color = 'red';
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
