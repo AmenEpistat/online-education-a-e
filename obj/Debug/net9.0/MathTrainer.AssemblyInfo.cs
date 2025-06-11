@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MathTrainer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d42b6aac8cb3646104bfa1df9ecfdc269902700")]
 [assembly: System.Reflection.AssemblyProductAttribute("MathTrainer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MathTrainer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
