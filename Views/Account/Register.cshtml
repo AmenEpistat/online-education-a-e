@@ -1,0 +1,208 @@
+@model MathTrainer.Models.User
+
+<style>
+    .hero {
+        margin: 0;
+        padding: 0 100px;
+        min-height: 10px;
+        background-image: none;
+    }
+
+    .hero-lk {
+        padding: 0 100px;
+        background-color: #6176F7;
+        margin: 0;
+        height: 100px;
+    }
+
+    .auth-section {
+        align-items: center;
+        margin-inline: auto;
+        width: 600px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-user-item button {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: inherit;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 12px 24px;
+        background-color: inherit;
+    }
+
+    .auth-container {
+        margin-top: 80px;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #f7f7f8;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        flex-grow: 1;
+        margin-bottom: 80px;
+        min-height: 200px;
+    }
+
+    .auth-container.hidden {
+        display: none;
+    }
+
+    input {
+        padding: 20px;
+        border: 1px solid #CCC;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        font-family: inherit;
+        font-size: 18px;
+        width: 400px;
+    }
+
+    button {
+        padding: 20px;
+        border: none;
+        border-radius: 16px;
+        cursor: pointer;
+        margin-bottom: 50px;
+    }
+
+    .auth-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: auto;
+        margin-block: 50px 20px;
+        margin-inline: auto;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    #login-message,
+    #register-message {
+        color: red;
+        font-size: 14px;
+    }
+
+    .m-list{
+        list-style: none;
+        font-size: 17px;
+    }
+</style>
+
+<main>
+
+    <section class="hero-lk">
+        <nav class="navigation">
+            <a href="index.html" class="logo-link"><span class="span-a">A</span>&<span class="span-e">E</span></a>
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                     <a asp-controller="Home" asp-action="Index" class="navigation-item-link">Главная</a>
+
+                </li>
+                <li class="navigation-item">
+                    <a href="#about" class="navigation-item-link">Тренажеры</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#about" class="navigation-item-link">Лекции</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#about" class="navigation-item-link">О нас</a>
+                </li>
+            </ul>
+            <ul class="navigation-user">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="navigation-user-item">
+                        <form asp-action="Logout" asp-controller="Account" method="post">
+                            <button class="navigation-user-link" type="submit">Выйти</button>
+                        </form>
+                    </li>
+                    <li class="navigation-user-item">
+                        <span class="navigation-user-link sign-up-button">@User.Identity.Name</span>
+                    </li>
+                }
+                else
+                {
+                    <li class="navigation-user-item">
+                        <a href="/Account/Login" class="navigation-user-link">Вход</a>
+                    </li>
+                    <li class="navigation-user-item">
+                        <a href="/Account/Register" class="navigation-user-link sign-up-button">Регистрация</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </section>
+    <section class="auth-section">
+        <form asp-action="Register" сlass="auth-container" method="post">
+            <h2>Регистрация</h2>
+            @if (!ViewData.ModelState.IsValid)
+        {
+            <div style="color: red; margin-bottom: 15px;">
+                <ul class="m-list">
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <li>@error.ErrorMessage</li>
+                    }
+                </ul>
+            </div>
+        }
+
+            <div class="auth-wrapper">
+                <input type="text" placeholder="Имя" name="name" required />
+
+                <input type="text" placeholder="Имя пользователя" name="username" required />
+
+                <input type="email" placeholder="Email" name="email" required />
+
+                <input type="password" name="password" placeholder="Пароль" required />
+            </div>
+
+            <button class="sign-up-button" type="submit">Зарегистрироваться</button>
+        </form>
+    </section>
+
+</main>
+<footer>
+    <div class="one-cell-container">
+        <a href="index.html" class="logo-link"><span class="span-a">A</span>&<span class="span-e">E</span></a>
+        <p class="phone-text">Номер: <a href="tel:+78128121212" class="footer-tel">+7 (812) 812-12-12</a></p>
+    </div>
+    <ul class="footer-nav">
+        По сайту:
+        <li class="nav-item">
+            <a href="#" class="nav-item-link">Главная</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-item-link">Тренажеры</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-item-link">Лекции</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-item-link">О нас</a>
+        </li>
+    </ul>
+    <ul class="social-list">
+        <li class="social-item">
+            <a href="#" class="social-link"></a>
+        </li>
+        <li class="social-item">
+            <a href="#" class="social-link"></a>
+        </li>
+        <li class="social-item">
+            <a href="#" class="social-link"></a>
+        </li>
+        <li class="social-item">
+            <a href="#" class="social-link"></a>
+        </li>
+    </ul>
+    <p class="copy">&copy; Amen&Els 2025</p>
+</footer>

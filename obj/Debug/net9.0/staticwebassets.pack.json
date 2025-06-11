@@ -1,0 +1,397 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/luiza/MathTrainer/obj/Debug/net9.0/scopedcss/projectbundle/MathTrainer.bundle.scp.css",
+      "PackagePath": "staticwebassets/MathTrainer.dlmfuj0u4e.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/css/auth.css",
+      "PackagePath": "staticwebassets/css/auth.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/css/courses.css",
+      "PackagePath": "staticwebassets/css/courses.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/css/profile.css",
+      "PackagePath": "staticwebassets/css/profile.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/4d66edbcb04151ca7b9a1f3220b83509.jpg",
+      "PackagePath": "staticwebassets/images/4d66edbcb04151ca7b9a1f3220b83509.jpg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/GraduationCap.svg",
+      "PackagePath": "staticwebassets/images/GraduationCap.svg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/Saly-1.png",
+      "PackagePath": "staticwebassets/images/Saly-1.png"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/Saly-2.png",
+      "PackagePath": "staticwebassets/images/Saly-2.png"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/Saly-3.png",
+      "PackagePath": "staticwebassets/images/Saly-3.png"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/Saly-4.png",
+      "PackagePath": "staticwebassets/images/Saly-4.png"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/Users.svg",
+      "PackagePath": "staticwebassets/images/Users.svg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/UsersThree.svg",
+      "PackagePath": "staticwebassets/images/UsersThree.svg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/alsy.jpg",
+      "PackagePath": "staticwebassets/images/alsy.jpg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/back.jpg",
+      "PackagePath": "staticwebassets/images/back.jpg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/back2.svg",
+      "PackagePath": "staticwebassets/images/back2.svg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/background.png",
+      "PackagePath": "staticwebassets/images/background.png"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/backhround-before.png",
+      "PackagePath": "staticwebassets/images/backhround-before.png"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/circle.svg",
+      "PackagePath": "staticwebassets/images/circle.svg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/easy.jpg",
+      "PackagePath": "staticwebassets/images/easy.jpg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/exam.jpg",
+      "PackagePath": "staticwebassets/images/exam.jpg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/facebook.png",
+      "PackagePath": "staticwebassets/images/facebook.png"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/hard.jpg",
+      "PackagePath": "staticwebassets/images/hard.jpg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/hero-img.png",
+      "PackagePath": "staticwebassets/images/hero-img.png"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/insta.svg",
+      "PackagePath": "staticwebassets/images/insta.svg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/logo.jpg",
+      "PackagePath": "staticwebassets/images/logo.jpg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/logo2.jpg",
+      "PackagePath": "staticwebassets/images/logo2.jpg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/luiza.jpg",
+      "PackagePath": "staticwebassets/images/luiza.jpg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/middle.jpg",
+      "PackagePath": "staticwebassets/images/middle.jpg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/sign-up.png",
+      "PackagePath": "staticwebassets/images/sign-up.png"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/images/vector.svg",
+      "PackagePath": "staticwebassets/images/vector.svg"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.js"
+    },
+    {
+      "Id": "/Users/luiza/MathTrainer/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.MathTrainer.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.MathTrainer.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.MathTrainer.props",
+      "PackagePath": "build\\MathTrainer.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.MathTrainer.props",
+      "PackagePath": "buildMultiTargeting\\MathTrainer.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.MathTrainer.props",
+      "PackagePath": "buildTransitive\\MathTrainer.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

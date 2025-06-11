@@ -1,0 +1,296 @@
+@model List<MathTrainer.Models.Question>
+@{
+    ViewData["Title"] = "Экзамен";
+    var startTime = (DateTime)ViewBag.ExamStartTime;
+    var endTime = startTime.AddMinutes(30);
+}
+<style>
+    /* Стили из вашего исходного кода без изменений */
+    .navigation {
+        padding: 0 100px;
+        margin-bottom: 0;
+    }
+
+    .level-main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .main-level-title {
+        margin: 10px 0 0 0;
+        font-family: 'Public Sans';
+        font-weight: 600;
+        font-size: 30px;
+        color: #FFA337;
+        line-height: 52px;
+        padding: 0 90px;
+    }
+
+    .theory,
+    .tasks {
+        background: #ffffff;
+        box-shadow: -10px 10px 30px -17px #6D737A;
+        margin: 0 80px;
+        border-radius: 10px;
+    }
+
+    .tasks {
+        margin-bottom: 80px;
+    }
+
+    .theory-title,
+    .tasks-title {
+        margin: 0;
+        background-color: #6176F7;
+        font-weight: 600;
+        padding: 5px 5px 5px 20px;
+        font-size: 24px;
+        line-height: 50px;
+        border-radius: 10px 10px 0 0;
+        color: #ffffff;
+        margin-bottom: 16px;
+    }
+
+    .theory-container {
+        padding: 20px;
+    }
+
+    .theory-container a {
+        color: #6176F7;
+        text-decoration: none;
+    }
+
+    .tasks-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .task {
+        font-family: 'PT Serif';
+        font-style: italic;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 40px;
+        margin: 20px;
+    }
+
+    .tasks-item {
+        padding-bottom: 30px;
+        border-bottom: #6D737A 2px solid;
+    }
+
+    .tasks-item:last-child {
+        border: none;
+    }
+
+    .tasks-answer-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tasks-answer-item {
+        padding: 20px 20px 10px 30px;
+    }
+
+    .task-label {
+        margin-left: 10px;
+        font-size: 24px;
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+
+    input[type="radio"]+.task-mark {
+        border-radius: 50%;
+    }
+
+    input[type="radio"]:checked+.task-mark::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #3f5e72;
+        left: 5px;
+        top: 5px;
+    }
+
+    .submit-button {
+        margin: 20px 30px 30px;
+        border: none;
+    }
+
+    .correct {
+        background-color: #d4edda;
+        border-left: 5px solid #28a745;
+    }
+
+    .incorrect {
+        background-color: #f8d7da;
+        border-left: 5px solid #dc3545;
+    }
+
+    .correct-hint {
+        background-color: #cce5ff;
+        border-left: 5px solid #007bff;
+    }
+    .time{
+       padding: 5px 5px 5px 20px;
+       color: #FFA337;
+    }
+</style>
+
+<header>
+    <nav class="navigation">
+        <a href="/" class="logo-link"><span class="span-a">A</span>&<span class="span-e">E</span></a>
+        <ul class="navigation-list">
+            <li class="navigation-item">
+                <a asp-controller="Home" asp-action="Index" class="navigation-item-link">Главная</a>
+            </li>
+            <li class="navigation-item">
+                <a href="#about" class="navigation-item-link active">Тренажеры</a>
+            </li>
+            <li class="navigation-item">
+                <a href="#about" class="navigation-item-link">Лекции</a>
+            </li>
+            <li class="navigation-item">
+                <a href="#about" class="navigation-item-link">О нас</a>
+            </li>
+        </ul>
+        <ul class="navigation-user">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li class="navigation-user-item">
+                    <form asp-action="Logout" asp-controller="Account" method="post">
+                        <button class="navigation-user-link" type="submit">Выйти</button>
+                    </form>
+                </li>
+                <li class="navigation-user-item">
+                    <span class="navigation-user-link sign-up-button">@User.Identity.Name</span>
+                </li>
+            }
+            else
+            {
+                <li class="navigation-user-item">
+                    <a href="/Account/Login" class="navigation-user-link">Вход</a>
+                </li>
+                <li class="navigation-user-item">
+                    <a href="/Account/Register" class="navigation-user-link sign-up-button">Регистрация</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</header>
+
+<main class="level-main">
+    <h2 class="main-level-title">Экзамен</h2>
+    <section class="tasks">
+        <h2 class="tasks-title">Задания</h2>
+        <p class="time">Время до окончания: <span id="timer"></span></p>
+        <form id="examForm" asp-controller="Courses" asp-action="SubmitExam" method="post">
+            <ul class="tasks-list">
+                @if (Model != null && Model.Any())
+                {
+                    @for (int i = 0; i < Model.Count; i++)
+                    {
+                        var selectedAnswers = ViewBag.Answers != null ? ViewBag.Answers[i] as List<string> : new List<string>();
+                        var correctAnswers = Model[i].CorrectAnswer.Split(',', StringSplitOptions.RemoveEmptyEntries).Select(a
+                        => a.Trim()).ToList();
+
+                        <li class="tasks-item">
+                            <div class="tasks-container">
+                                <p class="task">@Model[i].Text</p>
+                                <ul class="tasks-answer-list">
+                                    @foreach (var option in Model[i].Options.Split(';'))
+                                    {
+                                        var trimmedOption = option.Trim();
+                                        bool isSelected = selectedAnswers.Contains(trimmedOption);
+                                        bool isCorrect = correctAnswers.Contains(trimmedOption);
+                                        string cssClass = "";
+
+                                        if (ViewBag.ShowResults != null)
+                                        {
+                                            if (isSelected && isCorrect)
+                                                cssClass = "correct";
+                                            else if (isSelected && !isCorrect)
+                                                cssClass = "incorrect";
+                                            else if (!isSelected && isCorrect)
+                                                cssClass = "correct-hint";
+                                        }
+
+                                        <li class="tasks-answer-item @cssClass">
+                                            <input type="checkbox" name="answers[@i]" value="@trimmedOption"
+                                                id="q_@(i)_@trimmedOption" @(isSelected ? "checked" : "") />
+                                            <label for="q_@(i)_@trimmedOption">
+                                                <span class="task-mark"></span>
+                                                <span class="task-label">@trimmedOption</span>
+                                            </label>
+                                        </li>
+                                    }
+                                </ul>
+                            </div>
+                        </li>
+                    }
+                }
+                else
+                {
+                    <p>Нет заданий для отображения.</p>
+                }
+            </ul>
+            <button type="submit" class="submit-button sign-up-button">Отправить</button>
+        </form>
+
+    </section>
+</main>
+
+<footer>
+    <div class="one-cell-container">
+        <a href="/" class="logo-link"><span class="span-a">A</span>&<span class="span-e">E</span></a>
+        <p class="phone-text">Номер: <a href="tel:+78128121212" class="footer-tel">+7 (812) 812-12-12</a></p>
+    </div>
+    <ul class="footer-nav">
+        По сайту:
+        <li class="nav-item"><a href="#" class="nav-item-link">Главная</a></li>
+        <li class="nav-item"><a href="#about" class="nav-item-link">Тренажеры</a></li>
+        <li class="nav-item"><a href="#about" class="nav-item-link">Лекции</a></li>
+        <li class="nav-item"><a href="#about" class="nav-item-link">О нас</a></li>
+    </ul>
+    <ul class="social-list">
+        <li class="social-item"><a href="#" class="social-link">Telegram</a></li>
+        <li class="social-item"><a href="#" class="social-link">VK</a></li>
+        <li class="social-item"><a href="#" class="social-link">YouTube</a></li>
+    </ul>
+    <p class="copy">© Amen&Els 2025</p>
+</footer>
+
+<script>
+    const endTime = new Date('@endTime.ToUniversalTime().ToString("o")');
+    const timerEl = document.getElementById("timer");
+    function updateTimer() {
+        const now = new Date();
+        const diff = endTime - now;
+
+        if (diff <= 0) {
+            timerEl.textContent = "00:00";
+            document.getElementById("examForm").submit(); // автоотправка
+        } else {
+            const minutes = Math.floor(diff / 1000 / 60);
+            const seconds = Math.floor((diff / 1000) % 60);
+            timerEl.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        }
+    }
+
+    setInterval(updateTimer, 1000);
+    updateTimer();
+</script>

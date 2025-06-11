@@ -1,0 +1,210 @@
+﻿@{
+    ViewData["Title"] = "Главная";
+}
+<main>
+    <section class="hero">
+        <nav class="navigation">
+            <a href="index.html" class="logo-link"><span class="span-a">A</span>&<span class="span-e">E</span></a>
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a href="#" class="navigation-item-link active">Главная</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#about" class="navigation-item-link">Тренажеры</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#about" class="navigation-item-link">Лекции</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#about" class="navigation-item-link">О нас</a>
+                </li>
+            </ul>
+            <ul class="navigation-user">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="navigation-user-item">
+            
+                        <form asp-action="Logout" asp-controller="Account" method="post">
+                            @Html.AntiForgeryToken()
+                            <button class="navigation-user-link" type="submit">Выйти</button>
+                        </form>
+
+                    </li>
+                    <li class="navigation-user-item">
+                        <a href="/Dashboard/Index" class="navigation-user-link sign-up-button">@User.Identity.Name</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="navigation-user-item">
+                        <a href="/Account/Login" class="navigation-user-link">Вход</a>
+                    </li>
+                    <li class="navigation-user-item">
+                        <a href="/Account/Register" class="navigation-user-link sign-up-button">Регистрация</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+        <div class="hero-container">
+            <h1 class="hero-title">Начни свой успех с нами</h1>
+            <p class="hero-slogan">Доступ совершенно бесплатно к 300+ курсам от 20+ преподавателей
+            </p>
+            <p class="hero-text">Наши уроки помогут разобраться даже в самых запутанных примерах.</p>
+            <a href="#" class="hero-link sign-up-button">Начать учиться</a>
+        </div>
+    </section>
+    <section class="advantages">
+        <ul class="advantages-list">
+            <li class="advantages-item one">
+                <div class="advantages-container">
+                    <h3 class="advantages-title">20</h3>
+                    <p class="advantages-description">Учителей</p>
+                </div>
+            </li>
+            <li class="advantages-item two">
+                <div class="advantages-container">
+                    <h3 class="advantages-title">1000</h3>
+                    <p class="advantages-description">учеников</p>
+                </div>
+            </li>
+            <li class="advantages-item three">
+                <div class="advantages-container">
+                    <h3 class="advantages-title">2000+</h3>
+                    <p class="advantages-description">пользователей</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="levels" class="levels">
+        <h2 class="levels-title section-title">Уровни <span class="blue">тренажеров</span></h2>
+        <p class="levels-text section-text">Изучайте математические темы по уровням. Каждая тема включает теорию,
+            задачи и задания.</p>
+        <ul class="levels-list">
+            <li class="levels-item">
+
+                <a class="levels-link" asp-controller="Courses" asp-action="Easy">
+
+                    <h3 class="levels-item-title ease">Легкий уровень</h3>
+                    <p class="levels-item-text section-text">Основы арифметики, простые уравнения</p>
+                </a>
+            </li>
+            <li class="levels-item">
+                <a class="levels-link" asp-controller="Courses" asp-action="Medium">
+
+                    <h3 class="levels-item-title middle">Средний уровень</h3>
+                    <p class="levels-item-text  section-text">Алгебраические выражения, линейные уравнения</p>
+                </a>
+            </li>
+            <li class="levels-item">
+                <a class="levels-link" asp-controller="Courses" asp-action="Hard">
+
+                    <h3 class="levels-item-title hard">Продвинутый уровень</h3>
+                    <p class="levels-item-text  section-text">Квадратные уравнения, выражения с дробями</p>
+                </a>
+            </li>
+            <li class="levels-item">
+                <a class="levels-link" asp-controller="Courses" asp-action="Exam">
+
+                    <h3 class="levels-item-title exam">Итоговый тест</h3>
+                    <p class="levels-item-text  section-text">Проверка знаний и приятный бонус в виде сертификата от
+                        Amen&Els</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <section class="about" id="about">
+        <h2 class="about-title section-title">Почему <span class="blue">мы?</span></h2>
+        <p class="about-text section-text">Мы самые лучшие, самые красивые и умные. Если хотите быть такими же, пишите
+            нам.</p>
+        <ul class="about-list">
+            <li class="about-item">
+                <img class="about-item-img" src="images/alsy.jpg" width="290" height="280">
+                <div class="about-container">
+                    <h3 class="about-item-title">Алсу Иргалиева</h3>
+                    <p class="about-item-text">
+                        &#10004; Доктор физико-математических наук — защитила диссертацию по нелинейным
+                        дифференциальным
+                        уравнениям в MIT.<br>
+                        &#10004; Решила гипотезу Кавамуры (2021) — над этой проблемой бились 15 лет.<br>
+                        &#10004;Разработала алгоритм «ASTRA» — ускоряющий численные расчёты в 40 раз.<br>
+                        &#10004; Приглашённый профессор в Сколтехе и ETH Zürich — читаю лекции по алгебраической
+                        топологии.<br>
+                        &#10004; Мои студенты теперь работают в Google AI и IHÉS. <br>
+                        <span class="lets">Хочешь присоединиться к
+                            следующему
+                            прорыву?
+                        </span>
+
+                    </p>
+                </div>
+
+            </li>
+            <li class="about-item">
+                <img class="about-item-img" src="images/luiza.jpg" height="280" width="290">
+                <div class="about-container">
+                    <h3 class="about-item-title">Луиза Хакиева</h3>
+                    <p class="about-item-text"> &#10004; Решила 10 000+ уравнений – от школьных задач до
+                        олимпиадного
+                        уровня.<br>
+                        &#10004; Автор уникальной методики – помогаю понять сложные темы за 15 минут.<br>
+                        &#10004; Подготовила 500+ учеников – их оценки выросли с "троек" до "пятёрок".<br>
+                        &#10004; Победитель международных конкурсов - показываю, что математика может быть
+                        интересной и увлекательной.<br>
+                        &#10004; Создала курс с 98% положительных отзывов – ученики наконец-то перестали бояться
+                        уравнений!<br>
+                        <span class="lets">Давай учиться вместе?</span>
+                    </p>
+                </div>
+
+            </li>
+        </ul>
+    </section>
+    <section class="welcome">
+        <div class="welcome-container">
+            <h2 class="section-title welcome-title">Присоединяйся к <span class="blue">Amen&Els</span> уже сейчас
+            </h2>
+            <p class="welcome-p">Зарегистрируйся бесплатно, попробуй уже сегодня окунуться в математические
+                уравнения.
+                Обещаем ты не пожалешь. Это путешествие ты запомнишь.</p>
+            <a class="sign-up-button" href="#">Зарегистрироваться</a>
+        </div>
+    </section>
+</main>
+
+
+<footer>
+    <div class="one-cell-container">
+        <a href="index.html" class="logo-link"><span class="span-a">A</span>&<span class="span-e">E</span></a>
+        <p class="phone-text">Номер: <a href="tel:+78128121212" class="footer-tel">+7 (812) 812-12-12</a></p>
+    </div>
+    <ul class="footer-nav">
+        По сайту:
+        <li class="nav-item">
+            <a href="#" class="nav-item-link">Главная</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-item-link">Тренажеры</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-item-link">Лекции</a>
+        </li>
+        <li class="nav-item">
+            <a href="#about" class="nav-item-link">О нас</a>
+        </li>
+    </ul>
+    <ul class="social-list">
+        <li class="social-item">
+            <a href="#" class="social-link"></a>
+        </li>
+        <li class="social-item">
+            <a href="#" class="social-link"></a>
+        </li>
+        <li class="social-item">
+            <a href="#" class="social-link"></a>
+        </li>
+        <li class="social-item">
+            <a href="#" class="social-link"></a>
+        </li>
+    </ul>
+    <p class="copy">&copy; Amen&Els 2025</p>
+</footer>

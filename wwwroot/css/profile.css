@@ -1,0 +1,171 @@
+.hero {
+    margin: 0;
+    padding: 0;
+    padding: 0 100px;
+    min-height: 90px;
+    background: #6176F7;
+    background-size: 600px;
+    background-image: none;
+}
+
+.back-name {
+    padding: 0px 100px 80px;
+}
+
+.back-name-title {
+    font-size: 30px;
+    line-height: 38px;
+    margin: 0;
+    color: #101828;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.back-name-text {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    color: #667085;
+    margin-bottom: 52px;
+}
+
+.continue-title {
+    font-size: 26px;
+    line-height: 44px;
+    margin: 0;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.continue-text {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+    display: block;
+    color: #ffffff;
+}
+
+.continue-container {
+    background: #6176F7 url("../images/background.png") no-repeat center;
+    background-size: cover;
+    min-height: 275px;
+    border-radius: 8px;
+
+}
+
+.continue-container-wrapper {
+    margin-left: auto;
+    width: 600px;
+    position: relative;
+    padding: 120px 50px;
+}
+
+.continue-container-wrapper::before {
+    content: "";
+    display: block;
+    width: 450px;
+    position: absolute;
+    height: 450px;
+    background: url("../images/back2.svg") no-repeat;
+    left: -400px;
+    top: -100px;
+    background-size: cover;
+    z-index: 1;
+}
+
+.progress-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.progress-item {
+    border: 1px solid #EAECF0;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 8px;
+    flex-grow: 1;
+    padding: 24px;
+}
+
+.progress-item-title {
+    color: #667085;
+    margin: 0;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.activity {
+    padding: 80px 100px;
+    background: #F1F2F8;
+}
+.activity-title{
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.activity-text{
+    color: #667085;
+    margin-bottom: 24px;
+}
+.recent-courses {
+    background-color: #f7f7f8;
+    padding: 80px 100px;
+}
+.recent-title{
+    font-size: 26px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 52px;
+}
+
+.form-profile-container {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 15px;
+}
+
+.sign-up-button {
+    border: none;
+    align-self: center;
+}
+
+.private-date {
+    padding: 80px 100px;
+}
+
+.name-form-profile {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border-radius: 8px;
+    border: none;
+    width: 410px;
+    background-color: #F2F2F2;
+    height: 48px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    appearance: textfield;
+    font-family: inherit;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
